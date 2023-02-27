@@ -1,0 +1,101 @@
+header,
+.name {
+    background-color: #524EB7;
+    color: #FFFFFF;
+}
+
+.nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.name li {
+    list-style: none;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+header a,
+footer a {
+    color: #FFFFFF;
+}
+
+img {
+    width: 15vw;
+    border-radius: 50%;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Ubuntu', Roboto, serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 72px;
+    line-height: 150%;
+}
+
+h2 {
+    color: black;
+    font-size: 64px;
+    line-height: 150%;
+}
+
+h3 {
+    color: black;
+    font-size: 30px;
+    line-height: 150%;
+}
+
+h3::first-letter {
+    color: #524EB7;
+}
+
+.service p {
+    color: black;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 200%;
+}
+
+.service li {
+    color: black;
+}
+
+span {
+    font-size: 60%;
+}
+
+.service {
+    background-image: url(./assets/image/background/lines.svg);
+    color: black;
+}
+
+.service li:not(.complex) {
+    list-style: none;
+}
+
+footer {
+    background-color: #2B2B37;
+    color: #FFFFFF;
+}
+
+footer li {
+    list-style: none;
+}
+
+li,
+a:hover {
+    color: #524EB7;
+    text-decoration: underline;
+}
