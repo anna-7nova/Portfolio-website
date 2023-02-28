@@ -187,3 +187,8 @@ footer a {
   color: #ffffff;
   text-decoration: none;
 }
+
+footer a:hover {
+  color: #524eb7;
+  text-decoration: underline;
+}
