@@ -1,12 +1,46 @@
-header,
-.name {
-  background-color: #524eb7;
-  color: #ffffff;
+* {
+  margin: 0 0;
+  padding: 0 0;
+  font-family: "Ubuntu", Roboto, serif;
 }
 
-.nav a {
-  color: #ffffff;
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header,
+footer div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+}
+
+header,
+header a,
+.baner {
+  background-color: #524eb7;
+  color: #fffff3;
   text-decoration: none;
+}
+
+header,
+.baner li {
+  font-weight: 500;
+  text-align: center;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  font-size: 18px;
+  line-height: 27px;
 }
 
 header a:hover {
@@ -14,99 +48,142 @@ header a:hover {
   text-decoration: underline;
 }
 
-.name li {
-  list-style: none;
-  color: #ffffff;
-  text-decoration: none;
+li:not(.service-complex) {
+  list-style-type: none;
+  padding: 7px 7px;
+  margin: 5px 5px;
 }
 
-header a,
-footer a {
-  color: #ffffff;
+a {
+  padding: 7px 7px;
 }
 
-img {
-  width: 15vw;
+.icon {
+  position: relative;
+  left: 0%;
+  /*Не понимаю почему не меняется цвет через fill*/
+  fill: #b76f4e;
+  stroke: #ffffff;
+}
+
+.icon:hover {
+  stroke: #08055f;
+}
+
+nav {
+  flex-grow: 1;
+  margin: auto 5%;
+}
+
+.baner {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 10px 100px 10px;
+  justify-content: space-around;
+  font-weight: 700;
+  padding: 2%;
+}
+
+.baner div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.baner img {
+  width: 25vw;
   border-radius: 50%;
 }
 
-h1,
-h2,
-h3 {
-  font-family: "Ubuntu", Roboto, serif;
-  font-style: normal;
-  font-weight: 700;
+.baner ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 h1 {
+  padding: 30px 20px;
   font-size: 72px;
-  line-height: 150%;
+  line-height: 108px;
+}
+
+span {
+  font-size: 36px;
+  line-height: 54px;
+}
+
+.service {
+  background-color: #f4f7f7;
+  padding: 2%;
+}
+
+.service ul {
+  display: flex;
+  background-color: #ffffff;
+  justify-content: space-between;
+}
+
+.service li {
+  width: 100%;
+  padding: 15px 15px;
+}
+
+.service object {
+  width: 30%;
+}
+
+.service .arrow {
+  width: 10%;
+  align-items: center;
+}
+
+.service .complex {
+  display: inline;
+}
+
+.service a {
+  text-align: end;
 }
 
 h2 {
   color: black;
   font-size: 64px;
-  line-height: 150%;
+  line-height: 96px;
 }
 
 h3 {
   color: black;
   font-size: 30px;
-  line-height: 150%;
+  line-height: 45px;
 }
 
 h3::first-letter {
   color: #524eb7;
 }
 
-.service p {
-  color: black;
-  font-family: "Ubuntu";
-  font-style: normal;
+p {
   font-weight: 400;
   font-size: 18px;
-  line-height: 200%;
-}
-
-.service li {
-  color: black;
-}
-
-span {
-  font-size: 60%;
-}
-
-.service {
-  background-image: url("./assets/image/background/lines.svg");
-  color: black;
-}
-
-.service li:not(.complex) {
-  list-style: none;
+  line-height: 36px;
 }
 
 footer {
+  width: 100vw;
   background-color: #2b2b37;
   color: #ffffff;
 }
 
-footer li {
-  list-style: none;
+footer ul {
+  display: flex;
+  color: #fffff3;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto 50px;
 }
 
-li,
-a:hover {
-  color: #524eb7;
-  text-decoration: underline;
-}
-
-.icon {
-  width: 300px;
-  height: 300px;
-  fill: #4eb757;
-  stroke: #ffffff;
-}
-
-.icon:hover {
-  stroke: #08055f;
+footer a {
+  color: #ffffff;
+  text-decoration: none;
 }
